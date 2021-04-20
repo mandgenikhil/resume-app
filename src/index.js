@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Resume from './screens/resume';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 
@@ -40,7 +40,7 @@ class ErrorBoundary extends React.Component {
 const routing = (
 	<Router>
 		<ErrorBoundary>						
-			<Route exact path="/" component={App} />				
+			<Route exact path="/" component={Resume} />				
 		</ErrorBoundary>
 	</Router>
 );
