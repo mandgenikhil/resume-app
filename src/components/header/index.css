@@ -1,7 +1,7 @@
 .circular-img
 				{
 					display:inline-block;
-					padding:4px;
+					padding:2px;
 					border-radius:50%;
 					background:#008c6b;
 					height:120px;
@@ -13,6 +13,16 @@
 					display:inline-block;
 					margin-top:5px;
 					margin-left:10px
+}
+
+.triangle
+{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 200pc 200px 0;
+border-color: transparent #007bff transparent transparent;
+
 }
 
 .circle

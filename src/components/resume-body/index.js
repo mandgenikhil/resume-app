@@ -3,6 +3,8 @@ import ResumeSideBar from '../resume-side-bar'
 import ResumeContentBar from '../resume-content-bar'
 import ContactInfo from './contact-info'
 import HobbiesInfo from './hobbies-info'
+import CurrentworkEx from './current-work-ex'
+import PreviousWorkEx from './previous-work-ex'
 
 export default class ResumeBody extends Component {
     constructor(props) {
@@ -47,6 +49,7 @@ export default class ResumeBody extends Component {
                 isHobies: false,
                 isCurrent: true,
                 isPrevious: false,
+                content: CurrentworkEx
 
             })
 
@@ -57,6 +60,7 @@ export default class ResumeBody extends Component {
                 isHobies: false,
                 isCurrent: false,
                 isPrevious: true,
+                content: PreviousWorkEx
 
             })
 
