@@ -5,7 +5,7 @@ import Me from '../../assests/images/me.jpeg'
 export default class Header extends Component {
     render() {
         return (
-            <div className=''>
+            <div className='bg'>
                 <div className='level-right p-2'>
                     <p className='level-item'> <a href='https://facebook.com/' class="icon ">
                         <i class="fa fa-lg fa-facebook"></i>

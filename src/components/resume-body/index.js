@@ -5,11 +5,12 @@ import HomeInfo from './home-info'
 import SkillsInfo from './skills-info'
 import WorkExInfo from './work-ex-info'
 import EducationInfo from './eduaction-info'
+import './index.css'
 
 export default class ResumeBody extends Component {
     constructor(props) {
         super(props)
-        {
+        
             this.state =
             {
                 isHome: true,
@@ -19,7 +20,7 @@ export default class ResumeBody extends Component {
                 isContact: false,
                 content: HomeInfo
             }
-        }
+        
 
         this.onClickFunction = this.onClickFunction.bind(this);
     }
@@ -93,7 +94,7 @@ export default class ResumeBody extends Component {
     render() {
 
         return (
-            <div><div className="tabs is-centered is-size-5">
+            <div className='bgdata'><div className="tabs is-centered is-size-5">
                 <ul>
                     <li className={this.state.isHome === true ? "is-active" : ""} onClick={() => this.onClickFunction("isHome", false)}><a href >Home</a></li>
                     <li className={this.state.isWorkEx === true ? "is-active" : ""} onClick={() => this.onClickFunction("isWorkEx", false)}><a href>Work Experience</a></li>

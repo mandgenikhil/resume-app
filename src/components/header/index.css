@@ -39,3 +39,8 @@
 	/* background-color: #008c6b; */
 
 }
+
+.bg
+{
+	background-image: url('../../assests/images/header_bg.jpg');
+}
