@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import ResumeSideBar from '../resume-side-bar'
 import ResumeContentBar from '../resume-content-bar'
 import ContactInfo from './contact-info'
-import HobbiesInfo from './hobbies-info'
-import CurrentworkEx from './current-work-ex'
-import PreviousWorkEx from './previous-work-ex'
+import HomeInfo from './home-info'
+import SkillsInfo from './skills-info'
+import WorkExInfo from './work-ex-info'
+import EducationInfo from './eduaction-info'
 
 export default class ResumeBody extends Component {
     constructor(props) {
@@ -12,11 +12,12 @@ export default class ResumeBody extends Component {
         {
             this.state =
             {
-                isContact: true,
-                isHobies: false,
-                isCurrent: false,
-                isPrevious: false,
-                content: ContactInfo
+                isHome: true,
+                isWorkEx: false,
+                isEducation: false,
+                isSkills: false,
+                isContact: false,
+                content: HomeInfo
             }
         }
 
@@ -24,45 +25,66 @@ export default class ResumeBody extends Component {
     }
 
     onClickFunction(id, value) {
-        if (id === "isContact") {
+        if (id === "isHome") {
             this.setState({
+                isHome: true,
+                isWorkEx: false,
+                isEducation: false,
+                isSkills: false,
+                isContact: false,
+                content: HomeInfo
+            })
+        }
+        else if (id === "isWorkEx") {
+            this.setState({
+                isHome: false,
+                isWorkEx: true,
+                isEducation: false,
+                isSkills: false,
+                isContact: false,
+                content: WorkExInfo
+            })
+
+        }
+        else if (id === "isEducation") {
+            this.setState({
+                isHome: false,
+                isWorkEx: false,
+                isEducation: true,
+                isSkills: false,
+                isContact: false,
+                content: EducationInfo
+
+            })
+
+        }
+        else if (id === "isContact") {
+            this.setState({
+                isHome: false,
+                isWorkEx: false,
+                isEducation: false,
+                isSkills: false,
                 isContact: true,
-                isHobies: false,
-                isCurrent: false,
-                isPrevious: false,
                 content: ContactInfo
-            })
-        }
-        else if (id === "isHobies") {
-            this.setState({
-                isContact: false,
-                isHobies: true,
-                isCurrent: false,
-                isPrevious: false,
-                content: HobbiesInfo
-            })
-
-        }
-        else if (id === "isCurrent") {
-            this.setState({
-                isContact: false,
-                isHobies: false,
-                isCurrent: true,
-                isPrevious: false,
-                content: CurrentworkEx
 
             })
 
         }
-        else if (id === "isPrevious") {
+        else if (id === "isSkills") {
             this.setState({
+                isHome: false,
+                isWorkEx: false,
+                isEducation: false,
+                isSkills: true,
                 isContact: false,
-                isHobies: false,
-                isCurrent: false,
-                isPrevious: true,
-                content: PreviousWorkEx
+                content: SkillsInfo
 
-            })
+            }
+
+
+            )
+
+
 
         }
     }
@@ -71,14 +93,18 @@ export default class ResumeBody extends Component {
     render() {
 
         return (
-            <div className="columns section">
-                <div className="column is-one-quarter">
-                    <ResumeSideBar onClickFunction={this.onClickFunction} content={this.state} />
+            <div><div className="tabs is-centered is-size-5">
+                <ul>
+                    <li className={this.state.isHome === true ? "is-active" : ""} onClick={() => this.onClickFunction("isHome", false)}><a href >Home</a></li>
+                    <li className={this.state.isWorkEx === true ? "is-active" : ""} onClick={() => this.onClickFunction("isWorkEx", false)}><a href>Work Experience</a></li>
+                    <li className={this.state.isEducation === true ? "is-active" : ""} onClick={() => this.onClickFunction("isEducation", false)}><a href>Education</a></li>
+                    <li className={this.state.isSkills === true ? "is-active" : ""} onClick={() => this.onClickFunction("isSkills", false)}><a href>Skills</a></li>
+                    <li className={this.state.isContact === true ? "is-active" : ""} onClick={() => this.onClickFunction("isContact", false)}><a href>Contact</a></li>
+                </ul>
+            </div>
+                <div className="">
+                    <ResumeContentBar Content={this.state.content} />
                 </div>
-                <div className="column contentbox">
-                    <ResumeContentBar Content={this.state.content} data />
-                </div>
-
             </div>
         )
     }
