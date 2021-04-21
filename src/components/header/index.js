@@ -7,13 +7,13 @@ export default class Header extends Component {
         return (
             <div className='bg'>
                 <div className='level-right p-2'>
-                    <p className='level-item'> <a href='https://facebook.com/' class="icon ">
+                    <p className='level-item'> <a href='https://facebook.com/mandge/' class="icon ">
                         <i class="fa fa-lg fa-facebook"></i>
                     </a></p>
-                    <p className='level-item'><a href='https://instagram.com/mandge' class="icon has-text-danger">
+                    <p className='level-item'><a href='https://instagram.com/nikhil_mandge/' class="icon has-text-danger">
                         <i class="fa fa-lg fa-instagram"></i>
                     </a></p>
-                    <p className='level-item'><a href='https://linkedin.com/mandge' class="icon has-text-info">
+                    <p className='level-item'><a href='https://linkedin.com/in/nikhil-mandge-91450b112' class="icon has-text-info">
                         <i class="fa fa-lg fa-linkedin"></i>
                     </a></p>
                     <p className='level-item'><a href='www.gmail.com' class="icon has-text-dark">
