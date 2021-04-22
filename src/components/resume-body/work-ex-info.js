@@ -7,7 +7,7 @@ export default class WorkExInfo extends Component {
                 <p className='title is-5'>Senior Full-Stack Engineer @Fractal Analytics </p>
                 <p class="subtitle is-6">March 2019- Present</p>
 
-                <p >Experienced in developing forecasting web application which is based on analytics over data inputs and results represented using tables, different graphs and charts.
+                <p >• Experienced in developing forecasting web application which is based on analytics over data inputs and results represented using tables, different graphs and charts.
                 <p>• Developed the skills of business and technical understanding from client meetings.</p>
 • Application development using Python,Django and React JS like technologies and deployed the web app on cloud environment provided by Microsoft Azure.</p>
                            
@@ -16,8 +16,9 @@ export default class WorkExInfo extends Component {
                 <p className='title is-5'>Software Developer @Tavisca Solutions</p>
                 <p class="subtitle is-6">Augest 2016 - Feb 2019</p>
                 
-                <p>• Worked Real-Time Hotel Mapping And Descriptive Content Delivery System(Clarifi) This project provides a technology solution aimed to resolve the inconsistent distribution of hotel content across major hotel content providers.</p>
-                • Application development using Python,Django and React JS like technologies and deployed the web app on cloud environment provided by Microsoft Azure.
+                • Worked Real-Time Hotel Mapping And Descriptive Content Delivery System(Clarifi) This project provides a technology solution aimed to resolve the inconsistent distribution of hotel content across major hotel content providers.
+                <p>• Product enhancing with new feature developed using C# and .Net technologies.</p>
+                • Learnt to develop and deploy large scale application with millions and user base using application concurrently.
                            
             </div>
 </div>
