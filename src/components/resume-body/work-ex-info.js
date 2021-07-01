@@ -5,7 +5,7 @@ export default class WorkExInfo extends Component {
         return (<div>
             <div className="content p-2">
                 <p className='title is-5'>Senior Full-Stack Engineer @Fractal Analytics </p>
-                <p class="subtitle is-6">March 2019- Present</p>
+                <p class="subtitle is-6">March 2019- June 2021</p>
 
                 <p >• Experienced in developing forecasting web application which is based on analytics over data inputs and results represented using tables, different graphs and charts.
                 <p>• Developed the skills of business and technical understanding from client meetings.</p>

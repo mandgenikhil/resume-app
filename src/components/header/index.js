@@ -33,7 +33,7 @@ export default class Header extends Component {
                     <a href='https://instagram.com/nikhil_mandge/' class="icon has-text-danger">
                         <i class="fa fa-lg fa-instagram"></i>
                     </a>
-                    <a href='https://linkedin.com/in/nikhil-mandge-91450b112' class="icon has-text-info">
+                    <a href='https://linkedin.com/in/nikhilmandge' class="icon has-text-info">
                         <i class="fa fa-lg fa-linkedin"></i>
                     </a>
                     <a href='www.gmail.com' class="icon has-text-dark">

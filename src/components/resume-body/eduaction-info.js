@@ -6,6 +6,12 @@ export default class EducationInfo extends Component {
         return (
             <div>
                 <div className="content p-2">
+                    <p className='title is-5'>Upcoming Student of Masters Of Science in Computer Science @University Of North Carolina At Charlotte  </p>
+                    <p class="subtitle is-6">Augest 2021- May 2023 </p>
+                   
+
+                </div>
+                <div className="content p-2">
                     <p className='title is-5'>Bachelor of Engineering in Information Technology @University Of Mumbai (KGCE) </p>
                     <p class="subtitle is-6">Augest 2012- May 2016 :- 63.10%</p>
 
