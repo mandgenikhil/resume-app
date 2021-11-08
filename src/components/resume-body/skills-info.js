@@ -6,7 +6,7 @@ export default class SkillsInfo extends Component {
             <div>
             <div className="content p-1">
                 <p className='title is-5'>Programming Languages</p>
-                <p><span>• Java</span><span> • Javascript</span><span> • Python</span>  <span>• C#</span>   <span>• C</span></p>
+                <p><span>• Java</span><span> • ReactJs </span><span> • Javascript</span><span> • Python</span>  <span>• C#</span>   <span>• C</span></p>
                                               
             </div>
             <div className="content p-1">
