@@ -3,6 +3,16 @@ import React, { Component } from 'react'
 export default class WorkExInfo extends Component {
     render() {
         return (<div>
+
+<div className="content p-2">
+                <p className='title is-5'>Research and Development Assistance @Gopeaks Labs</p>
+                <p class="subtitle is-6">Oct 2021- Present</p>
+
+                <p >• Developing web based tool for knowledge discovery of predefined dataset and visualizing through graphs.</p>
+                
+                
+                           
+            </div>
             <div className="content p-2">
                 <p className='title is-5'>Senior Full-Stack Engineer @Fractal Analytics </p>
                 <p class="subtitle is-6">March 2019- June 2021</p>

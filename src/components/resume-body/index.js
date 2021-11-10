@@ -5,6 +5,7 @@ import HomeInfo from './home-info'
 import SkillsInfo from './skills-info'
 import WorkExInfo from './work-ex-info'
 import EducationInfo from './eduaction-info'
+import Project from './projects'
 import './index.css'
 
 export default class ResumeBody extends Component {
@@ -33,6 +34,7 @@ export default class ResumeBody extends Component {
                 isEducation: false,
                 isSkills: false,
                 isContact: false,
+                isProject:false,
                 content: HomeInfo
             })
         }
@@ -43,6 +45,7 @@ export default class ResumeBody extends Component {
                 isEducation: false,
                 isSkills: false,
                 isContact: false,
+                isProject: false,
                 content: WorkExInfo
             })
 
@@ -54,6 +57,7 @@ export default class ResumeBody extends Component {
                 isEducation: true,
                 isSkills: false,
                 isContact: false,
+                isProject: false,
                 content: EducationInfo
 
             })
@@ -66,6 +70,7 @@ export default class ResumeBody extends Component {
                 isEducation: false,
                 isSkills: false,
                 isContact: true,
+                isProject: false,
                 content: ContactInfo
 
             })
@@ -78,9 +83,12 @@ export default class ResumeBody extends Component {
                 isEducation: false,
                 isSkills: true,
                 isContact: false,
+                isProject: false,
                 content: SkillsInfo
 
             }
+
+            
 
 
             )
@@ -88,7 +96,21 @@ export default class ResumeBody extends Component {
 
 
         }
+
+        else if (id === "isProject") {
+            this.setState({
+                isHome: false,
+                isWorkEx: false,
+                isEducation: false,
+                isSkills: false,
+                isContact: false,
+                isProject: true,
+                content: Project
+
+            }
+            )
     }
+}
 
 
     render() {
@@ -99,8 +121,10 @@ export default class ResumeBody extends Component {
                     <li className={this.state.isHome === true ? "is-active" : ""} onClick={() => this.onClickFunction("isHome", false)}><a href >Home</a></li>
                     <li className={this.state.isWorkEx === true ? "is-active" : ""} onClick={() => this.onClickFunction("isWorkEx", false)}><a href>Work Experience</a></li>
                     <li className={this.state.isEducation === true ? "is-active" : ""} onClick={() => this.onClickFunction("isEducation", false)}><a href>Education</a></li>
+                    <li className={this.state.isProject === true ? "is-active" : ""} onClick={() => this.onClickFunction("isProject", false)}><a href>Projects</a></li>
                     <li className={this.state.isSkills === true ? "is-active" : ""} onClick={() => this.onClickFunction("isSkills", false)}><a href>Skills</a></li>
                     <li className={this.state.isContact === true ? "is-active" : ""} onClick={() => this.onClickFunction("isContact", false)}><a href>Contact</a></li>
+                    
                 </ul>
             </div>
                 <div className="">

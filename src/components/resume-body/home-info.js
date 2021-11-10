@@ -5,7 +5,8 @@ export default class HomeInfo extends Component {
     render() {
         return (
             <div className="content p-2">
-                <p className='title is-5'>About Me</p>
+                <p className='title is-5'>About Me<a className="ml-1 link is-size-6 is-italic"href="https://drive.google.com/file/d/1HjqoMjDshRuCacbDE2xO_Y9XHVaorweF/view?usp=sharing">resume</a></p>
+                <span className="subtitle is-6"></span>
                 <p>Problems? I like them. Difficult Problems? I like them even more. I was a child who always liked solving tough problems.Making better solutions and try to explore the depth of the each possible way to solve any problem.
 
                 I worked as a Software developer in Tavisca Pvt. Ltd. for almost 2.5 years. At Tavisca, while working on Core Technologies, I was exposed to myriad opportunities of problem solving and applying logic to implement complex business scenarios. Understanding client’s business requirements, developing solution algorithms and implementing them in real time made my work a joyful learning experience. Different awards like ‘Kudos and star performer, 2017’ added a cherry on top of the cake.
