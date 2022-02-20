@@ -9,6 +9,7 @@ export default class ProjectsInfo extends Component {
                     <p className='title is-5'> EMIE v2.1  </p>
                     <p className="subtitle is-6">Oct 2021- Present</p>
                     <p className="subtitle is-6">EMIE2.0 is an Web based tool built for curating and visualizing relationship knowledge data, with a preloaded data of meta-analytic findings of drivers for organizational performance outcomes. This Python web based tool has three pages: Instructions, Knowledge graph input, and Knowledge graph output.</p>
+                    <p className="subtitle is-6">Note:-  username = "test@test.com" and pass="test123!@#"</p>
                     <button className="button">
                         <a href={"https://github.com/mandgenikhil/emie"}>
                             <span className="icon">
@@ -20,7 +21,7 @@ export default class ProjectsInfo extends Component {
                         </a>
                     </button>
                     <button className="button ml-1" >
-                        <a href={"https://competent-wright-35e4ed.netlify.app/"}>
+                        <a href={"https://mighty-badlands-12109.herokuapp.com/home"}>
                             <span className="icon">
 
                                 <i className="fa fa-lg fa-globe"></i>

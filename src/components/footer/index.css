@@ -2,3 +2,11 @@
 {
     /* background-image: url('../../assests/images/header_bg.jpg'); */
 }
+
+.footer{
+    height: 1em;
+    bottom: 0px;
+    width: 100%;
+    padding: 1em;
+  }
+  

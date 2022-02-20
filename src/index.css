@@ -10676,6 +10676,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   display: none !important;
 }
 
+
+.footer{
+  height: 1em;
+  bottom: 0px;
+  width: 100%;
+  padding: 1em;
+}
+
+
 .is-sr-only {
   border: none !important;
   clip: rect(0, 0, 0, 0) !important;

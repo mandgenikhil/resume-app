@@ -42,5 +42,6 @@
 
 .bg
 {
-	background-image: url('../../assests/images/header_bg.jpg');
+	/* background-image: url('../../assests/images/sky-gd0298836e_1920.jpg'); */
+	background: white;
 }

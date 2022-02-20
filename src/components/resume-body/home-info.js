@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 export default class HomeInfo extends Component {
     render() {
         return (
-            <div className="content p-2">
+            <div className="content p-3">
                 <p className='title is-5'>About Me<a className="ml-1 link is-size-6 is-italic"href="https://drive.google.com/file/d/1HjqoMjDshRuCacbDE2xO_Y9XHVaorweF/view?usp=sharing">resume</a></p>
                 <span className="subtitle is-6"></span>
                 <p>Problems? I like them. Difficult Problems? I like them even more. I was a child who always liked solving tough problems.Making better solutions and try to explore the depth of the each possible way to solve any problem.

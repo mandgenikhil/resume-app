@@ -5,6 +5,16 @@ export default class WorkExInfo extends Component {
         return (<div>
 
 <div className="content p-2">
+                <p className='title is-5'>Graduate Teaching Assistant @UNC Charlotte </p>
+                <p class="subtitle is-6">Jan 2022- Present</p>
+
+                <p >• Graduate Teaching Assistant Under Prof Ali for Software System Design and Implementation Subject.</p>
+                
+                
+                           
+            </div>
+
+<div className="content p-2">
                 <p className='title is-5'>Research and Development Assistance @Gopeaks Labs</p>
                 <p class="subtitle is-6">Oct 2021- Present</p>
 
