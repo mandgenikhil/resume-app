@@ -20,7 +20,7 @@ export default class ProjectsInfo extends Component {
                         </a>
                     </button>
                     <button className="button ml-1" >
-                        <a href={"https://competent-wright-35e4ed.netlify.app/"}>
+                        <a href={"https://mighty-badlands-12109.herokuapp.com/home"}>
                             <span className="icon">
 
                                 <i className="fa fa-lg fa-globe"></i>
